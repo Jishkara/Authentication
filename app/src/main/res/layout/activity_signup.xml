@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/purple_700"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextPersonMail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:background="@android:color/darker_gray"
+            android:inputType="textPersonName"
+            android:layout_margin="20dp"
+            android:hint="Enter Your Email"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:background="@android:color/darker_gray"
+            android:layout_margin="20dp"
+            android:inputType="textPersonName"
+            android:hint="Enter Your Password"
+            android:textColorHint="@color/black"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@android:color/darker_gray"
+            android:inputType="textPersonName"
+            android:hint="Repeat Your Password"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:text="Sign up"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:iconTint="#7E2B2B" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
